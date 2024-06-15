@@ -13,7 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: "https://walmart-clone-frontend.vercel.app"
 }));
 app.use("/user", userRouter);
 app.use("/products", productsRouter);
