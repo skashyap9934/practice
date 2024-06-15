@@ -12,9 +12,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 app.use(express.json());
-app.use(cors({
-  origin: "https://walmart-clone-frontend.vercel.app"
-}));
+app.use(cors({}));
 app.use("/user", userRouter);
 app.use("/products", productsRouter);
 app.use("/wishlist", wishlistsRouter);
